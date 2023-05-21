@@ -1,0 +1,54 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  color: blueviolet;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.inputContainer {
+  position: relative;
+  height: 3rem;
+  margin: 0 0 2rem 0;
+}
+
+input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: inherit;
+  font-family: inherit;
+  background: none;
+  width: 100%;
+  border-radius: 0.25em;
+  border: solid 1px rgb(221, 224, 227);
+  outline: solid 0px rgb(111, 155, 226);
+  padding: 0.8em;
+}
+
+label {
+  user-select: none;
+  z-index: 1;
+  position: absolute;
+  left: 1rem;
+  top: 0.6rem;
+  cursor: text;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  padding: 0 0.5rem;
+  background: white;
+  color: gray;
+}
